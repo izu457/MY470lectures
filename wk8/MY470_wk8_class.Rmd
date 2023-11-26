@@ -343,7 +343,9 @@ x %>% log() %>%
 
 Below are the for-loops from class in Week 3. For each loop, create a chunk in R and translate the python code into R.
 
-``` python
+
+
+``` {python}
 # Exercise 1: Create a list that contains all integers from 1 to 100 (inclusive), 
 # except that it has None for every integer that is divisible by 3 
 # Your list should look like: [1, 2, None, 4, 5, None, 7, 8, None, 10, ...]
@@ -355,6 +357,16 @@ for i in range(1, 101):
     else:
         ls.append(i)
 print(ls)
+```
+
+```
+ls <- c(1:100)
+if (ls %% 3 = 0) {
+    ls.replace(ls, nan)
+}
+
+ls
+
 ```
 
 _Your cell here._
@@ -377,7 +389,7 @@ _Your cell here._
 
 Translate the functions from the class exercises in Week 4 (below) into R.
 
-```python
+```{python}
 # Exercise 3
 
 def zero_list(alist):
@@ -394,9 +406,20 @@ print(mylist)
 print(zerolist)
 ```
 
-_Your cell here._
+``` {r}
+#`Zero-vector function
+#`Takes a vector and returns another vector of the same length 
+    that looks like [0, 0, 0, ...].
+    
+zero_vector <- function(avector) {
+  newvector <- alist * 0 {
+    return(new_vector)
+  }
+}
 
-```python
+```
+
+```{python}
 # Exercise 4
 
 scientists = {'Alan Turing': 'mathematician', 'Richard Feynman': 'physicist',
@@ -413,7 +436,14 @@ def print_professions(dic):
 print_professions(scientists)
 ```
 
-_Your cell here._
+``` {r}
+print_professions <- function(named_list) {
+  print(c(named_list, "was a", 
+}
+
+```
+
+
 
 ### Vectorizing Exercises
 
